@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8727bb;
+    border-radius: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 300vh;
+
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    padding: 34px 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 16px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-shadow: none;
+}
+
+aside {
+    width: auto;
+    height: 100%;
+    position: fixed;
+    padding: 30px;
+
+    left: 0;
+
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .item {
+    width: 33px;
+    height: 11px;
+    background-color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+aside .item:hover {
+    background-color: #666;
+}
+
+aside .item.active {
+    background-color: #8727bb;
+}
+
+header {
+    width: 100%;
+
+    padding: 60px 120px 0 120px;
+
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+header main {
+    width: 100%;
+
+    /* background-color: #1C1D24; */
+    background-color: #010101;
+
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header main p {
+    margin-top: 10px;
+    color: #606060;
+    font-size: 24px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 0 120px;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+}

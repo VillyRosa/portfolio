@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillyRosa</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">VillyRosa</a>
+        <ul>
+            <li><a href="#header">Quem sou</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <div class="item" data-target="header" onclick="moveTo('header')"></div>
+        <div class="item" data-target="skills" onclick="moveTo('skills')"></div>
+        <div class="item" data-target="portfolio" onclick="moveTo('portfolio')"></div>
+        <div class="item" data-target="contact" onclick="moveTo('contact')"></div>
+    </aside>
+
+    <header id="header">
+
+        <h1>Olá, eu sou o Villy!</h1>
+        <main>
+            <p>Sou um desenvolvedor Web e Mobile híbrido.</p>
+            <img src="./assets/images/header-gif.gif" alt="gif-dev">
+        </main>
+
+    </header>
+
+    <section id="skills">
+        Skills section
+    </section>
+
+    <section id="portfolio">
+        Projects section
+    </section>
+
+    <section id="contact">
+        Contact section
+    </section>
+
+    <footer>
+        &copy; 2023 VillyRosa
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
