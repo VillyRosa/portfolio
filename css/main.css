@@ -142,6 +142,91 @@ section {
     padding: 0 120px;
 }
 
+section#contact {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#contact .links {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section#contact .links ul li {
+    list-style: none;
+}
+
+section#contact .links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section#contact .links .address li {
+    width: 300px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+section#contact .links .address li:hover {
+    border: 2px solid #8727bb;
+    background-color: rgba(220, 156, 255, 0.238);
+} 
+
+section#contact .links .address li i {
+    color: #8727bb;
+    margin-right: 10px;
+}
+
+section#contact .links .social {
+    display: flex;
+    gap: 30px;
+}
+
+section#contact .links .social li {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 500px;
+    background-color: transparent;
+
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#contact .links .social li:hover {
+    background-color: #8727bb;
+}
+
+section#contact form {
+    width: 35%;
+
+    background-color: #0b0b0b;
+    border-radius: 32px;
+    padding: 38px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact form input, section#contact form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #8727bb;
+}
+
 footer {
     text-align: center;
     padding: 18px;

@@ -44,13 +44,34 @@
     </section>
 
     <section id="contact">
-        Contact section
+        <div class="links">
+            <h2>Entre em contato comigo</h2>
+
+            <ul class="address">
+                <li onclick="openEmail('villyrosa@hotmail.com')"><i class="fa-solid fa-envelope"></i> villyrosa@hotmail.com</li>
+                <li onclick="openCall('+55(18)98816-9921')"><i class="fa-solid fa-phone"></i> +55 (18) 98816-9921</li>
+                <li onclick="downloadCV()"><i class="fa-solid fa-file-lines"></i> Baixar currículo</li>
+            </ul>
+
+            <ul class="social">
+                <li onclick="openLink('https://google.com')"><i class="fa-brands fa-instagram"></i></li>
+                <li onclick="openLink('https://google.com')"><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+        </div>
+
+        <form>
+            Tenho interesse em
+            <input type="text" name="" id="" placeholder="Seu nome">
+            <input type="email" name="" id="" placeholder="Seu email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+        </form>
     </section>
 
     <footer>
         &copy; 2023 VillyRosa
     </footer>
-    
+
     <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/f336556fec.js" crossorigin="anonymous"></script>
 </body>
 </html>

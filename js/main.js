@@ -50,6 +50,24 @@ function updateActiveItem() {
     });
 }
 
+function openEmail(email) {
+    window.location.href = "mailto:" + email;
+}
+
+function openCall(phoneNumber) {
+    window.location.href = "tel:" + phoneNumber;
+}
+
+function openLink(url) {
+    window.open(url, '_blank');
+}
+
+function downloadCV() {
+    const link = document.createElement('a');
+    link.href = '../assets/cv/villy-cv.pdf';
+    link.download = 'villy-cv.pdf';
+    link.click();
+}
 
 window.addEventListener('load', updateActiveItem);
 window.addEventListener('scroll', updateActiveItem);
